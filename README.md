@@ -2,7 +2,6 @@
 
 A cross-platform Python tool to download content from YouTube, Instagram, TikTok, Facebook, and Twitter (Note: Some platforms require API credentials).
 
-![Demo]([https://via.placeholder.com/800x400.png?text=Add+Screenshot+Here](https://i.gifer.com/XOsX.gif)) <!-- Replace with actual demo GIF -->
 
 ## 📋 Table of Contents
 - [Disclaimer](#⚠️-disclaimer)
