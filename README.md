@@ -56,7 +56,59 @@ pip install -r requirements.txt
 ```bash
 python social_downloader.py
 ```
+## ⚙ Configuration
+- Create `config.ini` for platform authentication:
+```bash
+[Instagram]
+username = your_username
+password = your_password
 
+[Twitter]
+api_key = xxxxxxxxx
+api_secret = xxxxxxxxx
+access_token = xxxxxxxxx
+access_secret = xxxxxxxxx
+
+[Facebook]
+app_id = xxxxxxxxx
+app_secret = xxxxxxxxx
+page_token = xxxxxxxxx
+```
+## 🐛 Troubleshooting
+
+### Common Issues & Solutions
+
+| Issue                      | Resolution Steps                                                                                                                                 |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Dependency Errors**       | ```bash pip install -r requirements.txt --force-reinstall ```<br>Ensure Python 3.6+ is installed and added to PATH                              |
+| **"URL Not Recognized"**    | 1. Verify URL format matches platform requirements<br>2. Check platform selection matches URL source<br>3. Test URL in browser first            |
+| **Authentication Failures** | 1. Validate credentials in `config.ini`<br>2. Check API token expiration<br>3. Verify platform API status at [status pages](#platform-status)   |
+| **FFmpeg Errors**           | 1. [Install FFmpeg](#ffmpeg-installation)<br>2. Add to system PATH:<br>   ```export PATH="$PATH:/path/to/ffmpeg"``` (Linux/Mac)<br>   Update system environment variables (Windows) |
+
+### Additional Help
+
+🛠 **Common Fixes First:**
+```bash
+# Clear package cache
+pip cache purge
+
+# Update all dependencies
+pip install --upgrade -r requirements.txt
+```
+
+📝 **Note for Developers:**
+```bash
+# Enable debug mode (add to script)
+import logging
+logging.basicConfig(level=logging.DEBUG)
+```
+
+⚠️ **Still Having Issues?**  
+Open a [GitHub Issue](https://github.com/yourusername/repo/issues) with:
+1. Full error output
+2. Platform version (Windows/Mac/Linux)
+3. Python version (`python --version`)
+4. Reproduction steps
 
 
 
