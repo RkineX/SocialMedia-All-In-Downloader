@@ -38,3 +38,27 @@ brew install ffmpeg
 
 # Windows (via Chocolatey)
 choco install ffmpeg
+```
+## Setup
+- Clone repository:
+```bash
+git clone https://github.com/yourusername/social-media-downloader.git
+```
+```bash
+cd social-media-downloader
+```
+### Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+### 🚀 Usage
+- Run the script:
+```bash
+python social_downloader.py
+```
+
+
+
+
+
+
